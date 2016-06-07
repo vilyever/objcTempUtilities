@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FEA396AD1D06C72400B4B0B9 /* UIView+VDConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA396A81D06C72400B4B0B9 /* UIView+VDConstraint.m */; };
+		FEA396AE1D06C72400B4B0B9 /* UIView+VDFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA396AA1D06C72400B4B0B9 /* UIView+VDFrame.m */; };
+		FEA396AF1D06C72400B4B0B9 /* UIView+VDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA396AC1D06C72400B4B0B9 /* UIView+VDKit.m */; };
 		FED41BA11D06AD0100A883AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA01D06AD0100A883AB /* main.m */; };
 		FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA31D06AD0100A883AB /* AppDelegate.m */; };
 		FED41BA71D06AD0100A883AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA61D06AD0100A883AB /* ViewController.m */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FEA396A71D06C72400B4B0B9 /* UIView+VDConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDConstraint.h"; sourceTree = "<group>"; };
+		FEA396A81D06C72400B4B0B9 /* UIView+VDConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDConstraint.m"; sourceTree = "<group>"; };
+		FEA396A91D06C72400B4B0B9 /* UIView+VDFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDFrame.h"; sourceTree = "<group>"; };
+		FEA396AA1D06C72400B4B0B9 /* UIView+VDFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDFrame.m"; sourceTree = "<group>"; };
+		FEA396AB1D06C72400B4B0B9 /* UIView+VDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDKit.h"; sourceTree = "<group>"; };
+		FEA396AC1D06C72400B4B0B9 /* UIView+VDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDKit.m"; sourceTree = "<group>"; };
 		FED41B9C1D06AD0100A883AB /* objcTempUtilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objcTempUtilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED41BA01D06AD0100A883AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FED41BA21D06AD0100A883AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +49,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FEA396A61D06C72400B4B0B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEA396A71D06C72400B4B0B9 /* UIView+VDConstraint.h */,
+				FEA396A81D06C72400B4B0B9 /* UIView+VDConstraint.m */,
+				FEA396A91D06C72400B4B0B9 /* UIView+VDFrame.h */,
+				FEA396AA1D06C72400B4B0B9 /* UIView+VDFrame.m */,
+				FEA396AB1D06C72400B4B0B9 /* UIView+VDKit.h */,
+				FEA396AC1D06C72400B4B0B9 /* UIView+VDKit.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FED41B931D06AD0100A883AB = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +122,7 @@
 		FED41BB91D06AD2500A883AB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FEA396A61D06C72400B4B0B9 /* View */,
 				FED41BBB1D06AD7200A883AB /* Macros */,
 			);
 			path = Classes;
@@ -187,6 +210,9 @@
 				FED41BA71D06AD0100A883AB /* ViewController.m in Sources */,
 				FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */,
 				FED41BA11D06AD0100A883AB /* main.m in Sources */,
+				FEA396AD1D06C72400B4B0B9 /* UIView+VDConstraint.m in Sources */,
+				FEA396AE1D06C72400B4B0B9 /* UIView+VDFrame.m in Sources */,
+				FEA396AF1D06C72400B4B0B9 /* UIView+VDKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +363,7 @@
 				FED41BB51D06AD0100A883AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
