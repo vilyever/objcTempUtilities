@@ -26,6 +26,7 @@
 		FED41BAB1D06AD0100A883AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FED41BAE1D06AD0100A883AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FED41BB01D06AD0100A883AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED41BBC1D06AD7200A883AB /* VDMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 			children = (
 				FED41B9E1D06AD0100A883AB /* objcTempUtilities */,
 				FED41B9D1D06AD0100A883AB /* Products */,
+				FED41BB71D06AD2500A883AB /* Pod */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +79,38 @@
 				FED41BA01D06AD0100A883AB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FED41BB71D06AD2500A883AB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FED41BB81D06AD2500A883AB /* Assets */,
+				FED41BB91D06AD2500A883AB /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		FED41BB81D06AD2500A883AB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FED41BB91D06AD2500A883AB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FED41BBB1D06AD7200A883AB /* Macros */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FED41BBB1D06AD7200A883AB /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				FED41BBC1D06AD7200A883AB /* VDMacros.h */,
+			);
+			path = Macros;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
