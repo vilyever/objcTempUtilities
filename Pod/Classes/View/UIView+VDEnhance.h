@@ -1,5 +1,5 @@
 //
-//  UIView+VDKit.h
+//  UIView+VDEnhance.h
 //  VDKit
 //
 //  Created by FTET on 15/1/28.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface UIView (VDKit)
+@interface UIView (VDEnhance)
 
 #pragma Methods
 #pragma Public Class Method

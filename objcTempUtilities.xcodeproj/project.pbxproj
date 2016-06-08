@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		FEA396AD1D06C72400B4B0B9 /* UIView+VDConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA396A81D06C72400B4B0B9 /* UIView+VDConstraint.m */; };
 		FEA396AE1D06C72400B4B0B9 /* UIView+VDFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA396AA1D06C72400B4B0B9 /* UIView+VDFrame.m */; };
-		FEA396AF1D06C72400B4B0B9 /* UIView+VDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA396AC1D06C72400B4B0B9 /* UIView+VDKit.m */; };
+		FEA396AF1D06C72400B4B0B9 /* UIView+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA396AC1D06C72400B4B0B9 /* UIView+VDEnhance.m */; };
 		FED41BA11D06AD0100A883AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA01D06AD0100A883AB /* main.m */; };
 		FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA31D06AD0100A883AB /* AppDelegate.m */; };
 		FED41BA71D06AD0100A883AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA61D06AD0100A883AB /* ViewController.m */; };
 		FED41BAA1D06AD0100A883AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED41BA81D06AD0100A883AB /* Main.storyboard */; };
 		FED41BAC1D06AD0100A883AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED41BAB1D06AD0100A883AB /* Assets.xcassets */; };
 		FED41BAF1D06AD0100A883AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED41BAD1D06AD0100A883AB /* LaunchScreen.storyboard */; };
+		FEE7D4FA1D07BAE5008CEC98 /* objcTempUtilities.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FEE7D4F81D07BAE5008CEC98 /* objcTempUtilities.podspec */; };
+		FEE7D4FB1D07BAE5008CEC98 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FEE7D4F91D07BAE5008CEC98 /* README.md */; };
+		FEE7D4FF1D07BB23008CEC98 /* NSObject+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7D4FE1D07BB23008CEC98 /* NSObject+VDEnhance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +26,8 @@
 		FEA396A81D06C72400B4B0B9 /* UIView+VDConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDConstraint.m"; sourceTree = "<group>"; };
 		FEA396A91D06C72400B4B0B9 /* UIView+VDFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDFrame.h"; sourceTree = "<group>"; };
 		FEA396AA1D06C72400B4B0B9 /* UIView+VDFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDFrame.m"; sourceTree = "<group>"; };
-		FEA396AB1D06C72400B4B0B9 /* UIView+VDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDKit.h"; sourceTree = "<group>"; };
-		FEA396AC1D06C72400B4B0B9 /* UIView+VDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDKit.m"; sourceTree = "<group>"; };
+		FEA396AB1D06C72400B4B0B9 /* UIView+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDEnhance.h"; sourceTree = "<group>"; };
+		FEA396AC1D06C72400B4B0B9 /* UIView+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDEnhance.m"; sourceTree = "<group>"; };
 		FED41B9C1D06AD0100A883AB /* objcTempUtilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objcTempUtilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED41BA01D06AD0100A883AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FED41BA21D06AD0100A883AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,6 +39,10 @@
 		FED41BAE1D06AD0100A883AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FED41BB01D06AD0100A883AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FED41BBC1D06AD7200A883AB /* VDMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDMacros.h; sourceTree = "<group>"; };
+		FEE7D4F81D07BAE5008CEC98 /* objcTempUtilities.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objcTempUtilities.podspec; sourceTree = "<group>"; };
+		FEE7D4F91D07BAE5008CEC98 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FEE7D4FD1D07BB23008CEC98 /* NSObject+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDEnhance.h"; sourceTree = "<group>"; };
+		FEE7D4FE1D07BB23008CEC98 /* NSObject+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDEnhance.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +63,8 @@
 				FEA396A81D06C72400B4B0B9 /* UIView+VDConstraint.m */,
 				FEA396A91D06C72400B4B0B9 /* UIView+VDFrame.h */,
 				FEA396AA1D06C72400B4B0B9 /* UIView+VDFrame.m */,
-				FEA396AB1D06C72400B4B0B9 /* UIView+VDKit.h */,
-				FEA396AC1D06C72400B4B0B9 /* UIView+VDKit.m */,
+				FEA396AB1D06C72400B4B0B9 /* UIView+VDEnhance.h */,
+				FEA396AC1D06C72400B4B0B9 /* UIView+VDEnhance.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -68,6 +75,8 @@
 				FED41B9E1D06AD0100A883AB /* objcTempUtilities */,
 				FED41B9D1D06AD0100A883AB /* Products */,
 				FED41BB71D06AD2500A883AB /* Pod */,
+				FEE7D4F81D07BAE5008CEC98 /* objcTempUtilities.podspec */,
+				FEE7D4F91D07BAE5008CEC98 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +131,7 @@
 		FED41BB91D06AD2500A883AB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FEE7D4FC1D07BB23008CEC98 /* Object */,
 				FEA396A61D06C72400B4B0B9 /* View */,
 				FED41BBB1D06AD7200A883AB /* Macros */,
 			);
@@ -134,6 +144,15 @@
 				FED41BBC1D06AD7200A883AB /* VDMacros.h */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		FEE7D4FC1D07BB23008CEC98 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				FEE7D4FD1D07BB23008CEC98 /* NSObject+VDEnhance.h */,
+				FEE7D4FE1D07BB23008CEC98 /* NSObject+VDEnhance.m */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FED41BAF1D06AD0100A883AB /* LaunchScreen.storyboard in Resources */,
+				FEE7D4FA1D07BAE5008CEC98 /* objcTempUtilities.podspec in Resources */,
 				FED41BAC1D06AD0100A883AB /* Assets.xcassets in Resources */,
 				FED41BAA1D06AD0100A883AB /* Main.storyboard in Resources */,
 			);
@@ -207,12 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE7D4FF1D07BB23008CEC98 /* NSObject+VDEnhance.m in Sources */,
 				FED41BA71D06AD0100A883AB /* ViewController.m in Sources */,
 				FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */,
 				FED41BA11D06AD0100A883AB /* main.m in Sources */,
+				FEE7D4FB1D07BAE5008CEC98 /* README.md in Sources */,
 				FEA396AD1D06C72400B4B0B9 /* UIView+VDConstraint.m in Sources */,
 				FEA396AE1D06C72400B4B0B9 /* UIView+VDFrame.m in Sources */,
-				FEA396AF1D06C72400B4B0B9 /* UIView+VDKit.m in Sources */,
+				FEA396AF1D06C72400B4B0B9 /* UIView+VDEnhance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

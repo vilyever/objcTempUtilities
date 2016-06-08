@@ -1,19 +1,19 @@
 //
-//  UIView+VDKit.m
+//  UIView+VDEnhance.m
 //  VDKit
 //
 //  Created by FTET on 15/1/28.
 //  Copyright (c) 2015年 Vilyever. All rights reserved.
 //
 
-#import "UIView+VDKit.h"
+#import "UIView+VDEnhance.h"
 
 #import <objc/runtime.h>
 
 //#import <VDUtil/VDUtil.h>
 
 
-@implementation UIView (VDKit)
+@implementation UIView (VDEnhance)
 
 #pragma Accessors
 #pragma Private Accessors
