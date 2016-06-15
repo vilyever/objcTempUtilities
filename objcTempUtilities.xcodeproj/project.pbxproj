@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE85654F1D1149B400B72111 /* CALayer+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85651D1D1149B400B72111 /* CALayer+VDEnhance.m */; };
+		FE8565501D1149B400B72111 /* NSDictionary+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565221D1149B400B72111 /* NSDictionary+VDEnhance.m */; };
+		FE8565511D1149B400B72111 /* NSObject+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565251D1149B400B72111 /* NSObject+VDEnhance.m */; };
+		FE8565521D1149B400B72111 /* VDDelayOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565281D1149B400B72111 /* VDDelayOperation.m */; };
+		FE8565531D1149B400B72111 /* NSString+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85652B1D1149B400B72111 /* NSString+VDEnhance.m */; };
+		FE8565541D1149B400B72111 /* NSString+VDJavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85652D1D1149B400B72111 /* NSString+VDJavaScript.m */; };
+		FE8565551D1149B400B72111 /* NSString+VDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85652F1D1149B400B72111 /* NSString+VDRegex.m */; };
+		FE8565561D1149B400B72111 /* UIApplication+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565321D1149B400B72111 /* UIApplication+VDEnhance.m */; };
+		FE8565571D1149B400B72111 /* UICollectionViewCell+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565351D1149B400B72111 /* UICollectionViewCell+VDEnhance.m */; };
+		FE8565581D1149B400B72111 /* UIColor+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565381D1149B400B72111 /* UIColor+VDEnhance.m */; };
+		FE8565591D1149B400B72111 /* UIImage+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85653B1D1149B400B72111 /* UIImage+VDEnhance.m */; };
+		FE85655A1D1149B400B72111 /* UILabel+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85653E1D1149B400B72111 /* UILabel+VDEnhance.m */; };
+		FE85655B1D1149B400B72111 /* UILabel+VDVerticalAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565401D1149B400B72111 /* UILabel+VDVerticalAlignment.m */; };
+		FE85655C1D1149B400B72111 /* UIScrollView+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565431D1149B400B72111 /* UIScrollView+VDEnhance.m */; };
+		FE85655D1D1149B400B72111 /* UIView+VDConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565461D1149B400B72111 /* UIView+VDConstraint.m */; };
+		FE85655E1D1149B400B72111 /* UIView+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565481D1149B400B72111 /* UIView+VDEnhance.m */; };
+		FE85655F1D1149B400B72111 /* UIView+VDFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85654A1D1149B400B72111 /* UIView+VDFrame.m */; };
+		FE8565601D1149B400B72111 /* UIViewController+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85654D1D1149B400B72111 /* UIViewController+VDEnhance.m */; };
 		FED41BA11D06AD0100A883AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA01D06AD0100A883AB /* main.m */; };
 		FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA31D06AD0100A883AB /* AppDelegate.m */; };
 		FED41BA71D06AD0100A883AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA61D06AD0100A883AB /* ViewController.m */; };
@@ -15,15 +33,46 @@
 		FED41BAF1D06AD0100A883AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED41BAD1D06AD0100A883AB /* LaunchScreen.storyboard */; };
 		FEE7D4FA1D07BAE5008CEC98 /* objcTempUtilities.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FEE7D4F81D07BAE5008CEC98 /* objcTempUtilities.podspec */; };
 		FEE7D4FB1D07BAE5008CEC98 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FEE7D4F91D07BAE5008CEC98 /* README.md */; };
-		FEE7D5141D07EB9A008CEC98 /* NSObject+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7D5061D07EB9A008CEC98 /* NSObject+VDEnhance.m */; };
-		FEE7D5151D07EB9A008CEC98 /* UIView+VDConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7D5091D07EB9A008CEC98 /* UIView+VDConstraint.m */; };
-		FEE7D5161D07EB9A008CEC98 /* UIView+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7D50B1D07EB9A008CEC98 /* UIView+VDEnhance.m */; };
-		FEE7D5171D07EB9A008CEC98 /* UIView+VDFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7D50D1D07EB9A008CEC98 /* UIView+VDFrame.m */; };
-		FEE7D5181D07EB9A008CEC98 /* UIViewController+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7D5101D07EB9A008CEC98 /* UIViewController+VDEnhance.m */; };
-		FEE7D5191D07EB9A008CEC98 /* UIWindow+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7D5131D07EB9A008CEC98 /* UIWindow+VDEnhance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE85651C1D1149B400B72111 /* CALayer+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+VDEnhance.h"; sourceTree = "<group>"; };
+		FE85651D1D1149B400B72111 /* CALayer+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+VDEnhance.m"; sourceTree = "<group>"; };
+		FE85651F1D1149B400B72111 /* VDMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDMacros.h; sourceTree = "<group>"; };
+		FE8565211D1149B400B72111 /* NSDictionary+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+VDEnhance.h"; sourceTree = "<group>"; };
+		FE8565221D1149B400B72111 /* NSDictionary+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+VDEnhance.m"; sourceTree = "<group>"; };
+		FE8565241D1149B400B72111 /* NSObject+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDEnhance.h"; sourceTree = "<group>"; };
+		FE8565251D1149B400B72111 /* NSObject+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDEnhance.m"; sourceTree = "<group>"; };
+		FE8565271D1149B400B72111 /* VDDelayOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDDelayOperation.h; sourceTree = "<group>"; };
+		FE8565281D1149B400B72111 /* VDDelayOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDDelayOperation.m; sourceTree = "<group>"; };
+		FE85652A1D1149B400B72111 /* NSString+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VDEnhance.h"; sourceTree = "<group>"; };
+		FE85652B1D1149B400B72111 /* NSString+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VDEnhance.m"; sourceTree = "<group>"; };
+		FE85652C1D1149B400B72111 /* NSString+VDJavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VDJavaScript.h"; sourceTree = "<group>"; };
+		FE85652D1D1149B400B72111 /* NSString+VDJavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VDJavaScript.m"; sourceTree = "<group>"; };
+		FE85652E1D1149B400B72111 /* NSString+VDRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VDRegex.h"; sourceTree = "<group>"; };
+		FE85652F1D1149B400B72111 /* NSString+VDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VDRegex.m"; sourceTree = "<group>"; };
+		FE8565311D1149B400B72111 /* UIApplication+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+VDEnhance.h"; sourceTree = "<group>"; };
+		FE8565321D1149B400B72111 /* UIApplication+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+VDEnhance.m"; sourceTree = "<group>"; };
+		FE8565341D1149B400B72111 /* UICollectionViewCell+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+VDEnhance.h"; sourceTree = "<group>"; };
+		FE8565351D1149B400B72111 /* UICollectionViewCell+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+VDEnhance.m"; sourceTree = "<group>"; };
+		FE8565371D1149B400B72111 /* UIColor+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VDEnhance.h"; sourceTree = "<group>"; };
+		FE8565381D1149B400B72111 /* UIColor+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VDEnhance.m"; sourceTree = "<group>"; };
+		FE85653A1D1149B400B72111 /* UIImage+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VDEnhance.h"; sourceTree = "<group>"; };
+		FE85653B1D1149B400B72111 /* UIImage+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VDEnhance.m"; sourceTree = "<group>"; };
+		FE85653D1D1149B400B72111 /* UILabel+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+VDEnhance.h"; sourceTree = "<group>"; };
+		FE85653E1D1149B400B72111 /* UILabel+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VDEnhance.m"; sourceTree = "<group>"; };
+		FE85653F1D1149B400B72111 /* UILabel+VDVerticalAlignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+VDVerticalAlignment.h"; sourceTree = "<group>"; };
+		FE8565401D1149B400B72111 /* UILabel+VDVerticalAlignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VDVerticalAlignment.m"; sourceTree = "<group>"; };
+		FE8565421D1149B400B72111 /* UIScrollView+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+VDEnhance.h"; sourceTree = "<group>"; };
+		FE8565431D1149B400B72111 /* UIScrollView+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+VDEnhance.m"; sourceTree = "<group>"; };
+		FE8565451D1149B400B72111 /* UIView+VDConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDConstraint.h"; sourceTree = "<group>"; };
+		FE8565461D1149B400B72111 /* UIView+VDConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDConstraint.m"; sourceTree = "<group>"; };
+		FE8565471D1149B400B72111 /* UIView+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDEnhance.h"; sourceTree = "<group>"; };
+		FE8565481D1149B400B72111 /* UIView+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDEnhance.m"; sourceTree = "<group>"; };
+		FE8565491D1149B400B72111 /* UIView+VDFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDFrame.h"; sourceTree = "<group>"; };
+		FE85654A1D1149B400B72111 /* UIView+VDFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDFrame.m"; sourceTree = "<group>"; };
+		FE85654C1D1149B400B72111 /* UIViewController+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDEnhance.h"; sourceTree = "<group>"; };
+		FE85654D1D1149B400B72111 /* UIViewController+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDEnhance.m"; sourceTree = "<group>"; };
 		FED41B9C1D06AD0100A883AB /* objcTempUtilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objcTempUtilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED41BA01D06AD0100A883AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FED41BA21D06AD0100A883AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,21 +83,8 @@
 		FED41BAB1D06AD0100A883AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FED41BAE1D06AD0100A883AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FED41BB01D06AD0100A883AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FED41BBC1D06AD7200A883AB /* VDMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDMacros.h; sourceTree = "<group>"; };
 		FEE7D4F81D07BAE5008CEC98 /* objcTempUtilities.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objcTempUtilities.podspec; sourceTree = "<group>"; };
 		FEE7D4F91D07BAE5008CEC98 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FEE7D5051D07EB9A008CEC98 /* NSObject+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDEnhance.h"; sourceTree = "<group>"; };
-		FEE7D5061D07EB9A008CEC98 /* NSObject+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDEnhance.m"; sourceTree = "<group>"; };
-		FEE7D5081D07EB9A008CEC98 /* UIView+VDConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDConstraint.h"; sourceTree = "<group>"; };
-		FEE7D5091D07EB9A008CEC98 /* UIView+VDConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDConstraint.m"; sourceTree = "<group>"; };
-		FEE7D50A1D07EB9A008CEC98 /* UIView+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDEnhance.h"; sourceTree = "<group>"; };
-		FEE7D50B1D07EB9A008CEC98 /* UIView+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDEnhance.m"; sourceTree = "<group>"; };
-		FEE7D50C1D07EB9A008CEC98 /* UIView+VDFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDFrame.h"; sourceTree = "<group>"; };
-		FEE7D50D1D07EB9A008CEC98 /* UIView+VDFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDFrame.m"; sourceTree = "<group>"; };
-		FEE7D50F1D07EB9A008CEC98 /* UIViewController+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDEnhance.h"; sourceTree = "<group>"; };
-		FEE7D5101D07EB9A008CEC98 /* UIViewController+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDEnhance.m"; sourceTree = "<group>"; };
-		FEE7D5121D07EB9A008CEC98 /* UIWindow+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+VDEnhance.h"; sourceTree = "<group>"; };
-		FEE7D5131D07EB9A008CEC98 /* UIWindow+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+VDEnhance.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +98,162 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE85651A1D1149B400B72111 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE85651B1D1149B400B72111 /* CALayer */,
+				FE85651E1D1149B400B72111 /* Macros */,
+				FE8565201D1149B400B72111 /* NSDictionary */,
+				FE8565231D1149B400B72111 /* NSObject */,
+				FE8565261D1149B400B72111 /* NSOperation */,
+				FE8565291D1149B400B72111 /* NSString */,
+				FE8565301D1149B400B72111 /* UIApplication */,
+				FE8565331D1149B400B72111 /* UICollectionViewCell */,
+				FE8565361D1149B400B72111 /* UIColor */,
+				FE8565391D1149B400B72111 /* UIImage */,
+				FE85653C1D1149B400B72111 /* UILabel */,
+				FE8565411D1149B400B72111 /* UIScrollView */,
+				FE8565441D1149B400B72111 /* UIView */,
+				FE85654B1D1149B400B72111 /* UIViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE85651B1D1149B400B72111 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				FE85651C1D1149B400B72111 /* CALayer+VDEnhance.h */,
+				FE85651D1D1149B400B72111 /* CALayer+VDEnhance.m */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		FE85651E1D1149B400B72111 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				FE85651F1D1149B400B72111 /* VDMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		FE8565201D1149B400B72111 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				FE8565211D1149B400B72111 /* NSDictionary+VDEnhance.h */,
+				FE8565221D1149B400B72111 /* NSDictionary+VDEnhance.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		FE8565231D1149B400B72111 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				FE8565241D1149B400B72111 /* NSObject+VDEnhance.h */,
+				FE8565251D1149B400B72111 /* NSObject+VDEnhance.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		FE8565261D1149B400B72111 /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				FE8565271D1149B400B72111 /* VDDelayOperation.h */,
+				FE8565281D1149B400B72111 /* VDDelayOperation.m */,
+			);
+			path = NSOperation;
+			sourceTree = "<group>";
+		};
+		FE8565291D1149B400B72111 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				FE85652A1D1149B400B72111 /* NSString+VDEnhance.h */,
+				FE85652B1D1149B400B72111 /* NSString+VDEnhance.m */,
+				FE85652C1D1149B400B72111 /* NSString+VDJavaScript.h */,
+				FE85652D1D1149B400B72111 /* NSString+VDJavaScript.m */,
+				FE85652E1D1149B400B72111 /* NSString+VDRegex.h */,
+				FE85652F1D1149B400B72111 /* NSString+VDRegex.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		FE8565301D1149B400B72111 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				FE8565311D1149B400B72111 /* UIApplication+VDEnhance.h */,
+				FE8565321D1149B400B72111 /* UIApplication+VDEnhance.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		FE8565331D1149B400B72111 /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE8565341D1149B400B72111 /* UICollectionViewCell+VDEnhance.h */,
+				FE8565351D1149B400B72111 /* UICollectionViewCell+VDEnhance.m */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FE8565361D1149B400B72111 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				FE8565371D1149B400B72111 /* UIColor+VDEnhance.h */,
+				FE8565381D1149B400B72111 /* UIColor+VDEnhance.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		FE8565391D1149B400B72111 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				FE85653A1D1149B400B72111 /* UIImage+VDEnhance.h */,
+				FE85653B1D1149B400B72111 /* UIImage+VDEnhance.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		FE85653C1D1149B400B72111 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				FE85653D1D1149B400B72111 /* UILabel+VDEnhance.h */,
+				FE85653E1D1149B400B72111 /* UILabel+VDEnhance.m */,
+				FE85653F1D1149B400B72111 /* UILabel+VDVerticalAlignment.h */,
+				FE8565401D1149B400B72111 /* UILabel+VDVerticalAlignment.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		FE8565411D1149B400B72111 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FE8565421D1149B400B72111 /* UIScrollView+VDEnhance.h */,
+				FE8565431D1149B400B72111 /* UIScrollView+VDEnhance.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		FE8565441D1149B400B72111 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FE8565451D1149B400B72111 /* UIView+VDConstraint.h */,
+				FE8565461D1149B400B72111 /* UIView+VDConstraint.m */,
+				FE8565471D1149B400B72111 /* UIView+VDEnhance.h */,
+				FE8565481D1149B400B72111 /* UIView+VDEnhance.m */,
+				FE8565491D1149B400B72111 /* UIView+VDFrame.h */,
+				FE85654A1D1149B400B72111 /* UIView+VDFrame.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		FE85654B1D1149B400B72111 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE85654C1D1149B400B72111 /* UIViewController+VDEnhance.h */,
+				FE85654D1D1149B400B72111 /* UIViewController+VDEnhance.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		FED41B931D06AD0100A883AB = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				FED41BB81D06AD2500A883AB /* Assets */,
-				FED41BB91D06AD2500A883AB /* Classes */,
+				FE85651A1D1149B400B72111 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -119,66 +311,6 @@
 			children = (
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		FED41BB91D06AD2500A883AB /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FEE7D5041D07EB9A008CEC98 /* NSObject */,
-				FEE7D5071D07EB9A008CEC98 /* UIView */,
-				FEE7D50E1D07EB9A008CEC98 /* UIViewController */,
-				FEE7D5111D07EB9A008CEC98 /* UIWindow */,
-				FED41BBB1D06AD7200A883AB /* Macros */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		FED41BBB1D06AD7200A883AB /* Macros */ = {
-			isa = PBXGroup;
-			children = (
-				FED41BBC1D06AD7200A883AB /* VDMacros.h */,
-			);
-			path = Macros;
-			sourceTree = "<group>";
-		};
-		FEE7D5041D07EB9A008CEC98 /* NSObject */ = {
-			isa = PBXGroup;
-			children = (
-				FEE7D5051D07EB9A008CEC98 /* NSObject+VDEnhance.h */,
-				FEE7D5061D07EB9A008CEC98 /* NSObject+VDEnhance.m */,
-			);
-			path = NSObject;
-			sourceTree = "<group>";
-		};
-		FEE7D5071D07EB9A008CEC98 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				FEE7D5081D07EB9A008CEC98 /* UIView+VDConstraint.h */,
-				FEE7D5091D07EB9A008CEC98 /* UIView+VDConstraint.m */,
-				FEE7D50A1D07EB9A008CEC98 /* UIView+VDEnhance.h */,
-				FEE7D50B1D07EB9A008CEC98 /* UIView+VDEnhance.m */,
-				FEE7D50C1D07EB9A008CEC98 /* UIView+VDFrame.h */,
-				FEE7D50D1D07EB9A008CEC98 /* UIView+VDFrame.m */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		FEE7D50E1D07EB9A008CEC98 /* UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				FEE7D50F1D07EB9A008CEC98 /* UIViewController+VDEnhance.h */,
-				FEE7D5101D07EB9A008CEC98 /* UIViewController+VDEnhance.m */,
-			);
-			path = UIViewController;
-			sourceTree = "<group>";
-		};
-		FEE7D5111D07EB9A008CEC98 /* UIWindow */ = {
-			isa = PBXGroup;
-			children = (
-				FEE7D5121D07EB9A008CEC98 /* UIWindow+VDEnhance.h */,
-				FEE7D5131D07EB9A008CEC98 /* UIWindow+VDEnhance.m */,
-			);
-			path = UIWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +344,7 @@
 				TargetAttributes = {
 					FED41B9B1D06AD0100A883AB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2594YAARKH;
+						DevelopmentTeam = RCG7DT556Q;
 					};
 				};
 			};
@@ -253,16 +385,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEE7D5191D07EB9A008CEC98 /* UIWindow+VDEnhance.m in Sources */,
 				FED41BA71D06AD0100A883AB /* ViewController.m in Sources */,
+				FE85655E1D1149B400B72111 /* UIView+VDEnhance.m in Sources */,
+				FE85655D1D1149B400B72111 /* UIView+VDConstraint.m in Sources */,
+				FE8565601D1149B400B72111 /* UIViewController+VDEnhance.m in Sources */,
+				FE8565551D1149B400B72111 /* NSString+VDRegex.m in Sources */,
 				FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */,
+				FE85655A1D1149B400B72111 /* UILabel+VDEnhance.m in Sources */,
+				FE85655C1D1149B400B72111 /* UIScrollView+VDEnhance.m in Sources */,
 				FED41BA11D06AD0100A883AB /* main.m in Sources */,
-				FEE7D5161D07EB9A008CEC98 /* UIView+VDEnhance.m in Sources */,
-				FEE7D5181D07EB9A008CEC98 /* UIViewController+VDEnhance.m in Sources */,
-				FEE7D5171D07EB9A008CEC98 /* UIView+VDFrame.m in Sources */,
+				FE8565501D1149B400B72111 /* NSDictionary+VDEnhance.m in Sources */,
+				FE85654F1D1149B400B72111 /* CALayer+VDEnhance.m in Sources */,
+				FE8565511D1149B400B72111 /* NSObject+VDEnhance.m in Sources */,
+				FE8565591D1149B400B72111 /* UIImage+VDEnhance.m in Sources */,
 				FEE7D4FB1D07BAE5008CEC98 /* README.md in Sources */,
-				FEE7D5141D07EB9A008CEC98 /* NSObject+VDEnhance.m in Sources */,
-				FEE7D5151D07EB9A008CEC98 /* UIView+VDConstraint.m in Sources */,
+				FE8565581D1149B400B72111 /* UIColor+VDEnhance.m in Sources */,
+				FE8565521D1149B400B72111 /* VDDelayOperation.m in Sources */,
+				FE8565571D1149B400B72111 /* UICollectionViewCell+VDEnhance.m in Sources */,
+				FE85655F1D1149B400B72111 /* UIView+VDFrame.m in Sources */,
+				FE8565561D1149B400B72111 /* UIApplication+VDEnhance.m in Sources */,
+				FE8565541D1149B400B72111 /* NSString+VDJavaScript.m in Sources */,
+				FE8565531D1149B400B72111 /* NSString+VDEnhance.m in Sources */,
+				FE85655B1D1149B400B72111 /* UILabel+VDVerticalAlignment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,22 +519,30 @@
 		FED41BB41D06AD0100A883AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = objcTempUtilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vilyever.objcTempUtilities;
+				PRODUCT_BUNDLE_IDENTIFIER = vilyever.tttest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		FED41BB51D06AD0100A883AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = objcTempUtilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vilyever.objcTempUtilities;
+				PRODUCT_BUNDLE_IDENTIFIER = vilyever.tttest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

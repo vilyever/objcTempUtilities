@@ -1,65 +1,79 @@
 //
 //  UIView+VDFrame.m
-//  VDKit
+//  objcTempUtilities
 //
-//  Created by FTET on 15/1/28.
-//  Copyright (c) 2015年 Vilyever. All rights reserved.
+//  Created by Deng on 16/6/15.
+//  Copyright © Deng. All rights reserved.
 //
 
 #import "UIView+VDFrame.h"
 
 //#import <objc/runtime.h>
 
-//#import <VDUtil/VDUtil.h>
-
-
-//static char _Associated_Object_Key;
-
 
 @implementation UIView (VDFrame)
 
-#pragma Accessors
-#pragma Private Accessors
+@dynamic vd_frameOrigin;
+@dynamic vd_frameSize;
+@dynamic vd_frameX;
+@dynamic vd_frameY;
+@dynamic vd_frameWidth;
+@dynamic vd_frameHeight;
 
-#pragma Public Accessors
+#pragma mark Public Method
 
 
-#pragma Methods
-#pragma Private Class Method
-
-#pragma Private Instance Method
-
-#pragma Public Class Method
-
-#pragma Public Instance Method
-- (void)vd_setOriginX:(float)originX
-{
-    [self vd_setOrigin:CGPointMake(originX, self.frame.origin.y) ];
+#pragma mark Properties
+- (void)setVd_frameOrigin:(CGPoint)vd_frameOrigin {
+    [self setFrame:CGRectMake(vd_frameOrigin.x, vd_frameOrigin.y, self.frame.size.width, self.frame.size.height) ];
 }
 
-- (void)vd_setOriginY:(float)originY
-{
-    [self vd_setOrigin:CGPointMake(self.frame.origin.x, originY) ];
+- (CGPoint)vd_frameOrigin {
+    return self.frame.origin;
 }
 
-- (void)vd_setOrigin:(CGPoint)origin
-{
-    [self setFrame:CGRectMake(origin.x, origin.y, self.frame.size.width, self.frame.size.height) ];
+- (void)setVd_frameSize:(CGSize)vd_frameSize {
+    [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, vd_frameSize.width, vd_frameSize.height) ];
 }
 
-- (void)vd_setWidth:(float)width
-{
-    [self vd_setSize:CGSizeMake(width, self.frame.size.height) ];
+- (CGSize)vd_frameSize {
+    return self.frame.size;
 }
 
-- (void)vd_setHeight:(float)height
-{
-    [self vd_setSize:CGSizeMake(self.frame.size.width, height) ];
+- (void)setVd_frameX:(float)vd_frameX {
+    [self setFrame:CGRectMake(vd_frameX, self.frame.origin.y, self.frame.size.width, self.frame.size.height) ];
 }
 
-- (void)vd_setSize:(CGSize)size
-{
-    [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, size.width, size.height) ];
+- (float)vd_frameX {
+    return self.frame.origin.x;
 }
+
+- (void)setVd_frameY:(float)vd_frameY {
+    [self setFrame:CGRectMake(self.frame.origin.x, vd_frameY, self.frame.size.width, self.frame.size.height) ];
+}
+
+- (float)vd_frameY {
+    return self.frame.origin.y;
+}
+
+- (void)setVd_frameWidth:(float)vd_frameWidth {
+    [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, vd_frameWidth, self.frame.size.height) ];
+}
+
+- (float)vd_frameWidth {
+    return self.frame.size.width;
+}
+
+- (void)setVd_frameHeight:(float)vd_frameHeight {
+    [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, vd_frameHeight) ];
+}
+
+- (float)vd_frameHeight {
+    return self.frame.size.height;
+}
+
+
+#pragma mark Private Method
+
 
 @end

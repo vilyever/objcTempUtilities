@@ -1,43 +1,19 @@
 //
 //  UIView+VDEnhance.m
-//  VDKit
+//  objcTempUtilities
 //
-//  Created by FTET on 15/1/28.
-//  Copyright (c) 2015年 Vilyever. All rights reserved.
+//  Created by Deng on 16/6/15.
+//  Copyright © Deng. All rights reserved.
 //
 
 #import "UIView+VDEnhance.h"
 
-#import <objc/runtime.h>
-
-//#import <VDUtil/VDUtil.h>
+//#import <objc/runtime.h>
 
 
 @implementation UIView (VDEnhance)
 
-#pragma Accessors
-#pragma Private Accessors
-
-#pragma Public Accessors
-
-
-#pragma Methods
-#pragma Private Class Method
-
-#pragma Private Instance Method
-- (instancetype)initWithNibName:(NSString *)nibName
-{
-    self = [self init];
-    if (self)
-    {
-        NSArray *nibViews = [ [NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil];
-        self = nibViews[0];
-    }
-    
-    return self;
-}
-
-#pragma Public Class Method
+#pragma mark Public Method
 + (instancetype)vd_viewFromNib
 {
     return [self vd_viewFromNibWithNibName:NSStringFromClass( [self class] ) ];
@@ -48,7 +24,6 @@
     return [ [ [self class] alloc] initWithNibName:nibName];
 }
 
-#pragma Public Instance Method
 - (NSArray *)vd_addSubview:(UIView *)view scaleToFill:(BOOL)scaleToFill
 {
     if (!view)
@@ -82,25 +57,18 @@
     }
 }
 
+#pragma mark Private Method
+- (instancetype)initWithNibName:(NSString *)nibName
+{
+    self = [self init];
+    if (self)
+    {
+        NSArray *nibViews = [ [NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil];
+        self = nibViews[0];
+    }
+    
+    return self;
+}
 
-#pragma load
-//+ (void)load
-//{
-//    SEL originSelector = @selector(didMoveToSuperview);
-//    Method originMethod = class_getInstanceMethod(self, originSelector);
-//    void (*originalImp)(id, SEL) = (void(*)(id, SEL) )method_getImplementation(originMethod);
-//    
-//    SEL hookSelector = @selector(didChangeSuperview);
-//    Method hookMethod = class_getInstanceMethod(self, hookSelector);
-//    void (*hookImp)(id, SEL) = (void(*)(id, SEL) )method_getImplementation(hookMethod);
-//    
-//    void (^block)(id) = ^(id _self) {
-//        originalImp(_self, originSelector);
-//        hookImp(_self, hookSelector);
-//    };
-//    
-//    IMP newImp = imp_implementationWithBlock(block);
-//    method_setImplementation(originMethod, newImp);
-//}
 
 @end

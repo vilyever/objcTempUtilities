@@ -1,50 +1,19 @@
 //
 //  UIViewController+VDEnhance.m
-//  VDKit
+//  objcTempUtilities
 //
-//  Created by FTET on 15/1/28.
-//  Copyright (c) 2015年 Vilyever. All rights reserved.
+//  Created by Deng on 16/6/15.
+//  Copyright © Deng. All rights reserved.
 //
 
 #import "UIViewController+VDEnhance.h"
 
-#import <objc/runtime.h>
-
-#import "UIWindow+VDEnhance.h"
-
-
-static char After_View_Did_Load_Action_Blocks_Associated_Object_Key;
+//#import <objc/runtime.h>
 
 
 @implementation UIViewController (VDEnhance)
 
-#pragma Accessors
-#pragma Private Accessors
-
-#pragma Public Accessors
-
-
-#pragma Methods
-#pragma Private Class Method
-
-#pragma Private Instance Method
-//- (void)afterViewDidLoad
-//{
-//    NSMutableDictionary *blocks = objc_getAssociatedObject(self, &After_View_Did_Load_Action_Blocks_Associated_Object_Key);
-//
-//    if (blocks)
-//    {
-//        for (id key in [blocks allKeys] )
-//        {
-//            void (^block)(void) = [blocks objectForKey:key];
-//            block();
-//        }
-//    }
-//
-//    [self clearAllActionsAfterViewDidLoad];
-//}
-
-#pragma Public Class Method
+#pragma mark Public Method
 + (instancetype)vd_controllerFromNib
 {
     return [ [self class] vd_controllerFromNibWithNibName:NSStringFromClass( [self class] ) ];
@@ -71,40 +40,8 @@ static char After_View_Did_Load_Action_Blocks_Associated_Object_Key;
     return [storyboard instantiateViewControllerWithIdentifier:identifier];
 }
 
-+ (UIViewController*)vd_topViewControllerWithRootViewController:(UIViewController*)rootViewController
-{
-    if (!rootViewController)
-    {
-        rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    }
-    
-    if ( [rootViewController isKindOfClass:[UITabBarController class] ] )
-    {
-        UITabBarController* tabBarController = (UITabBarController*)rootViewController;
-        return [self vd_topViewControllerWithRootViewController:tabBarController.selectedViewController];
-    }
-    else if ( [rootViewController isKindOfClass:[UINavigationController class] ] )
-    {
-        UINavigationController* navigationController = (UINavigationController*)rootViewController;
-        return [self vd_topViewControllerWithRootViewController:navigationController.visibleViewController];
-    }
-    else if (rootViewController.presentedViewController)
-    {
-        UIViewController* presentedViewController = rootViewController.presentedViewController;
-//        if (presentedViewController.isBeingDismissed)
-//        {
-//            return rootViewController;
-//        }
-        return [self vd_topViewControllerWithRootViewController:presentedViewController];
-    }
-//    else if (rootViewController.isBeingDismissed)
-//    {
-//        return [self vd_topViewControllerWithRootViewController:rootViewController.presentingViewController];
-//    }
-    else
-    {
-        return rootViewController;
-    }
++ (UIViewController *)vd_topViewController {
+    return [self vd_topViewControllerWithRootViewController:nil];
 }
 
 + (void)vd_backToRootViewController
@@ -122,65 +59,12 @@ static char After_View_Did_Load_Action_Blocks_Associated_Object_Key;
         presentedViewController = presentingViewController;
     }
     
-    if ( [rootViewController isKindOfClass:[UITabBarController class] ] )
-    {
-        UITabBarController *tabBarController = (UITabBarController *)rootViewController;
-        [tabBarController setSelectedIndex:0];
-        
-        if ([tabBarController.selectedViewController isKindOfClass:[UINavigationController class]])
-        {
-            UINavigationController *navigationController = (UINavigationController *)tabBarController.selectedViewController;
-            [navigationController popToRootViewControllerAnimated:NO];
-        }
-    }
-    else if ( [rootViewController isKindOfClass:[UINavigationController class] ] )
+    if ( [rootViewController isKindOfClass:[UINavigationController class] ] )
     {
         UINavigationController *navigationController = (UINavigationController *)rootViewController;
         [navigationController popToRootViewControllerAnimated:NO];
-        
-        if ([navigationController.topViewController isKindOfClass:[UITabBarController class]])
-        {
-            UITabBarController *tabBarController = (UITabBarController *)navigationController.topViewController;
-            [tabBarController setSelectedIndex:0];
-        }
     }
 }
-
-#pragma Public Instance Method
-- (void)vd_dismissWithDisplayType:(VDViewControllerDisplayType)displayType
-{
-    switch (displayType) {
-        case VDViewControllerDisplayTypePresented:
-            if (self.presentingViewController)
-            {
-                [self dismissViewControllerAnimated:YES completion:NULL];
-            }
-            break;
-            
-        case VDViewControllerDisplayTypePushed:
-            if (self.navigationController && self.navigationController.viewControllers.count > 1)
-            {
-                [self.navigationController popViewControllerAnimated:YES];
-            }
-            break;
-            
-        case VDViewControllerDisplayTypeInTab:
-            break;
-            
-        case VDViewControllerDisplayTypePopover:
-            
-            if ( [self respondsToSelector:@selector(dismissPopoverAnimated:) ] )
-            {
-                [ (UIPopoverController *)self dismissPopoverAnimated:YES];
-            }
-            break;
-            
-        default:
-            break;
-    }
-}
-
-static CGFloat PopoverVerticalOffset = 7.0f;
 
 - (UIPopoverPresentationController *)vd_popoverFromView:(UIView *)view atDirection:(UIPopoverArrowDirection)direction shouldDisplayArrow:(BOOL)shouldDisplayArrow fromViewController:(UIViewController *)controller
 {
@@ -197,6 +81,8 @@ static CGFloat PopoverVerticalOffset = 7.0f;
     }
     else
     {
+        CGFloat PopoverVerticalOffset = 7.0f;
+        
         switch (direction) {
             case UIPopoverArrowDirectionUp:
             case UIPopoverArrowDirectionAny:
@@ -227,74 +113,53 @@ static CGFloat PopoverVerticalOffset = 7.0f;
     self.modalPresentationStyle = UIModalPresentationPopover;
     [controller presentViewController:self animated:YES completion:NULL];
     UIPopoverPresentationController *popoverPresentationController = self.popoverPresentationController;
-    popoverPresentationController.sourceView = VDWindow;
-    popoverPresentationController.sourceRect = VDWindow.bounds;
+    popoverPresentationController.sourceView = [UIApplication sharedApplication].keyWindow;
+    popoverPresentationController.sourceRect = [UIApplication sharedApplication].keyWindow.bounds;
     popoverPresentationController.permittedArrowDirections = 0;
     
     return popoverPresentationController;
 }
 
-- (void)vd_excuteActionAfterViewDidLoad:(void (^)(void))block
-{
-    [self vd_excuteActionWithTag:nil afterViewDidLoad:block];
+- (void)vd_dismiss {
+    [self vd_dismissWithAnimation:YES];
 }
 
-- (void)vd_excuteActionWithTag:(NSString *)tag afterViewDidLoad:(void (^)(void))block
+- (void)vd_dismissWithAnimation:(BOOL)animated {
+    if (self.presentingViewController) {
+        [self dismissViewControllerAnimated:animated completion:nil];
+    }
+    else if (self.navigationController && self.navigationController.topViewController == self) {
+        [self.navigationController popViewControllerAnimated:animated];
+    }
+}
+
+#pragma mark Private Method
++ (UIViewController*)vd_topViewControllerWithRootViewController:(UIViewController*)rootViewController
 {
-    NSMutableDictionary *blocks = objc_getAssociatedObject(self, &After_View_Did_Load_Action_Blocks_Associated_Object_Key);
-    
-    if (!blocks)
+    if (!rootViewController)
     {
-        blocks = [ [NSMutableDictionary alloc] init];
-        objc_setAssociatedObject(self, &After_View_Did_Load_Action_Blocks_Associated_Object_Key, blocks, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     }
     
-    if (!tag)
+    if ( [rootViewController isKindOfClass:[UITabBarController class] ] )
     {
-        for (NSUInteger i = [blocks allKeys].count; ; i++)
-        {
-            tag = [NSString stringWithFormat:@"%lu", (unsigned long)i];
-            if (![blocks objectForKey:tag] )
-            {
-                break;
-            }
-        }
+        UITabBarController* tabBarController = (UITabBarController*)rootViewController;
+        return [self vd_topViewControllerWithRootViewController:tabBarController.selectedViewController];
     }
-    
-    if (block)
+    else if ( [rootViewController isKindOfClass:[UINavigationController class] ] )
     {
-        [blocks setObject:[block copy] forKey:tag];
+        UINavigationController* navigationController = (UINavigationController*)rootViewController;
+        return [self vd_topViewControllerWithRootViewController:navigationController.visibleViewController];
+    }
+    else if (rootViewController.presentedViewController)
+    {
+        UIViewController* presentedViewController = rootViewController.presentedViewController;
+        return [self vd_topViewControllerWithRootViewController:presentedViewController];
     }
     else
     {
-        [blocks removeObjectForKey:tag];
+        return rootViewController;
     }
 }
-
-- (void)vd_clearAllActionsAfterViewDidLoad
-{
-    objc_setAssociatedObject(self, &After_View_Did_Load_Action_Blocks_Associated_Object_Key, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-
-#pragma load
-//+ (void)load
-//{
-//    SEL originSelector = @selector(viewDidLoad);
-//    Method originMethod = class_getInstanceMethod(self, originSelector);
-//    void (*originalImp)(id, SEL) = (void(*)(id, SEL) )method_getImplementation(originMethod);
-//
-//    SEL hookSelector = @selector(afterViewDidLoad);
-//    Method hookMethod = class_getInstanceMethod(self, hookSelector);
-//    void (*hookImp)(id, SEL) = (void(*)(id, SEL) )method_getImplementation(hookMethod);
-//
-//    void (^block)(id) = ^(id _self) {
-//        originalImp(_self, originSelector);
-//        hookImp(_self, hookSelector);
-//    };
-//
-//    IMP newImp = imp_implementationWithBlock(block);
-//    method_setImplementation(originMethod, newImp);
-//}
 
 @end

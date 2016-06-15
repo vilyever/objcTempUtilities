@@ -1,51 +1,27 @@
 //
 //  NSObject+VDEnhance.m
-//  VDKit
+//  objcTempUtilities
 //
-//  Created by FTET on 15/1/28.
-//  Copyright (c) 2015年 Vilyever. All rights reserved.
+//  Created by Deng on 16/6/15.
+//  Copyright © Deng. All rights reserved.
 //
 
 #import "NSObject+VDEnhance.h"
 
-#import <objc/runtime.h>
-
-
-static char Data_Associated_Object_Key;
+//#import <objc/runtime.h>
 
 
 @implementation NSObject (VDEnhance)
 
-#pragma Accessors
-#pragma Private Accessors
-
-#pragma Public Accessors
-- (void)setVd_data:(id)vd_data
-{
-    objc_setAssociatedObject(self, &Data_Associated_Object_Key, vd_data, OBJC_ASSOCIATION_ASSIGN);
-}
-
-- (id)vd_data
-{
-    return objc_getAssociatedObject(self, &Data_Associated_Object_Key);
-}
-
-
-#pragma Methods
-#pragma Private Class Method
-
-#pragma Private Instance Method
-
-#pragma Public Class Method
+#pragma mark Public Method
 + (NSString *)vd_className
 {
     return NSStringFromClass( [self class] );
 }
 
-#pragma Public Instance Method
-- (void)vd_performActionDelay:(float)secondRatio action:(void (^)(void))block
+- (void)vd_performActionDelay:(float)second action:(void (^)(void))block
 {
-    dispatch_time_t delay = dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC * secondRatio);
+    dispatch_time_t delay = dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC * second);
     dispatch_after(delay, dispatch_get_main_queue(), [block copy] );
 }
 
@@ -69,19 +45,20 @@ static char Data_Associated_Object_Key;
     ( (void (*)(id, SEL, NSInteger) )[self methodForSelector:aSelector] )(self, aSelector, integer);
 }
 
+#pragma mark Private Method
+
+
 @end
 
 
 @implementation VDWeakObjectCarrier
 
-#pragma Methods
-#pragma Public Class Method
+#pragma mark Public Method
 + (instancetype)carrierWithWeakObject:(id)object
 {
     return [ [VDWeakObjectCarrier alloc] initWithWeakObject:object];
 }
 
-#pragma Public Instance Method
 - (instancetype)initWithWeakObject:(id)object
 {
     self = [super init];

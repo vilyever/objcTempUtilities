@@ -1,24 +1,22 @@
 //
 //  UIView+VDConstraint.m
-//  VDKit
+//  objcTempUtilities
 //
-//  Created by FTET on 15/1/28.
-//  Copyright (c) 2015年 Vilyever. All rights reserved.
+//  Created by Deng on 16/6/15.
+//  Copyright © Deng. All rights reserved.
 //
 
 #import "UIView+VDConstraint.h"
 
 //#import <objc/runtime.h>
 
-//static char _Associated_Object_Key;
-
 
 @implementation UIView (VDConstraint)
 
-#pragma Accessors
-#pragma Private Accessors
+#pragma mark Public Method
 
-#pragma Public Accessors
+
+#pragma mark Properties
 - (CGFloat)vd_constraintTop
 {
     for (NSLayoutConstraint *constraint in self.superview.constraints)
@@ -106,7 +104,7 @@
         }
     }
     
-    if (self.vd_constraintAspectRatio != -1.0f)
+    if (self.vd_constraintAspectRatio != 0.0f)
     {
         return self.vd_constraintHeight * self.vd_constraintAspectRatio;
     }
@@ -129,7 +127,7 @@
         }
     }
     
-    if (self.vd_constraintAspectRatio != -1.0f)
+    if (self.vd_constraintAspectRatio != 0.0f)
     {
         return self.vd_constraintWidth / self.vd_constraintAspectRatio;
     }
@@ -156,17 +154,11 @@
         }
     }
     
-    return -1.0f;
+    return 0.0f;
 }
 
 
-#pragma Methods
-#pragma Private Class Method
+#pragma mark Private Method
 
-#pragma Private Instance Method
-
-#pragma Public Class Method
-
-#pragma Public Instance Method
 
 @end

@@ -1,28 +1,17 @@
 //
 //  UIViewController+VDEnhance.h
-//  VDKit
+//  objcTempUtilities
 //
-//  Created by FTET on 15/1/28.
-//  Copyright (c) 2015年 Vilyever. All rights reserved.
+//  Created by Deng on 16/6/15.
+//  Copyright © Deng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 
-/* 视图显现方式 */
-typedef NS_ENUM(NSInteger, VDViewControllerDisplayType) {
-    VDViewControllerDisplayTypePresented, // Modal模态
-    VDViewControllerDisplayTypePushed, // Navigation Push
-    VDViewControllerDisplayTypeInTab, // 内嵌在UITabbar中
-    VDViewControllerDisplayTypePopover  // 通过Popover方式弹出
-};
-
-
 @interface UIViewController (VDEnhance)
 
-
-#pragma Methods
-#pragma Public Class Method
+#pragma mark Public Method
 /**
  *  通过nib初始化VC
  *  @note 使用此方法 xib文件名和VC文件名必须相同
@@ -69,26 +58,16 @@ typedef NS_ENUM(NSInteger, VDViewControllerDisplayType) {
  */
 + (instancetype)vd_controllerFromStoryboardWithStoryboardName:(NSString *)storyboardName withIdentifier:(NSString *)identifier;
 
-+ (UIViewController*)vd_topViewControllerWithRootViewController:(UIViewController*)rootViewController;
++ (UIViewController*)vd_topViewController;
 
 + (void)vd_backToRootViewController;
-
-#pragma Public Instance Method
-/**
- *  退出此VC
- *
- *  @param appearType VC的显现方式
- */
-- (void)vd_dismissWithDisplayType:(VDViewControllerDisplayType)displayType;
-
 
 // with direction, it must length larger than 52.0f to show completion arrow
 - (UIPopoverPresentationController *)vd_popoverFromView:(UIView *)view atDirection:(UIPopoverArrowDirection)direction shouldDisplayArrow:(BOOL)shouldDisplayArrow fromViewController:(UIViewController *)controller;
 
 - (UIPopoverPresentationController *)vd_popoverInCenterOfWindowFromViewController:(UIViewController *)controller;
 
-- (void)vd_excuteActionAfterViewDidLoad:(void (^)(void) )block NS_DEPRECATED_IOS(5_0, 5_0, "Aspects can do this better");
-- (void)vd_excuteActionWithTag:(NSString *)tag afterViewDidLoad:(void (^)(void) )block NS_DEPRECATED_IOS(5_0, 5_0, "Aspects can do this better");
-- (void)vd_clearAllActionsAfterViewDidLoad NS_DEPRECATED_IOS(5_0, 5_0, "Aspects can do this better");
+- (void)vd_dismiss;
+- (void)vd_dismissWithAnimation:(BOOL)animated;
 
 @end

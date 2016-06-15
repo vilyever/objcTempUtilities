@@ -1,9 +1,9 @@
 //
 //  UIView+VDFrame.h
-//  VDKit
+//  objcTempUtilities
 //
-//  Created by FTET on 15/1/28.
-//  Copyright (c) 2015年 Vilyever. All rights reserved.
+//  Created by Deng on 16/6/15.
+//  Copyright © Deng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,16 +11,12 @@
 
 @interface UIView (VDFrame)
 
-#pragma Methods
-#pragma Public Class Method
-
-#pragma Public Instance Method
-- (void)vd_setOriginX:(float)originX;
-- (void)vd_setOriginY:(float)originY;
-- (void)vd_setOrigin:(CGPoint)origin;
-
-- (void)vd_setWidth:(float)width;
-- (void)vd_setHeight:(float)height;
-- (void)vd_setSize:(CGSize)size;
+#pragma mark Public Method
+@property (nonatomic, assign, readonly) CGPoint vd_frameOrigin;
+@property (nonatomic, assign, readonly) CGSize vd_frameSize;
+@property (nonatomic, assign, readonly) float vd_frameX;
+@property (nonatomic, assign, readonly) float vd_frameY;
+@property (nonatomic, assign, readonly) float vd_frameWidth;
+@property (nonatomic, assign, readonly) float vd_frameHeight;
 
 @end

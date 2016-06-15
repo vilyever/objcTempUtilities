@@ -1,9 +1,9 @@
 //
 //  UIView+VDEnhance.h
-//  VDKit
+//  objcTempUtilities
 //
-//  Created by FTET on 15/1/28.
-//  Copyright (c) 2015年 Vilyever. All rights reserved.
+//  Created by Deng on 16/6/15.
+//  Copyright © Deng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,12 +11,10 @@
 
 @interface UIView (VDEnhance)
 
-#pragma Methods
-#pragma Public Class Method
+#pragma mark Public Method
 + (instancetype)vd_viewFromNib;
 + (instancetype)vd_viewFromNibWithNibName:(NSString *)nibName;
 
-#pragma Public Instance Method
 - (NSArray *)vd_addSubview:(UIView *)view scaleToFill:(BOOL)scaleToFill;
 - (void)vd_removeAllSubviews;
 
