@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <UIViewController+VDRouter.h>
+#import "UIViewController+VDRouter.h"
 
 
 @class VDRouterNavigationViewController;
