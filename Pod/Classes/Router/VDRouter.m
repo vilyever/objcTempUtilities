@@ -32,7 +32,7 @@
     return _sharedInstance;
 }
 
-+ (void)initialize:(UIWindow *)appDelegateWindow {
++ (void)initializeWithAppDelegateWindow:(UIWindow *)appDelegateWindow {
     NSAssert(appDelegateWindow, @"appDelegateWindow can't be nil");
     appDelegateWindow.rootViewController = [self sharedInstance].rootNavigationController;
     [self sharedInstance].isInitialized = YES;
