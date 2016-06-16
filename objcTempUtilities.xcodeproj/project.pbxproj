@@ -25,6 +25,10 @@
 		FE85655E1D1149B400B72111 /* UIView+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565481D1149B400B72111 /* UIView+VDEnhance.m */; };
 		FE85655F1D1149B400B72111 /* UIView+VDFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85654A1D1149B400B72111 /* UIView+VDFrame.m */; };
 		FE8565601D1149B400B72111 /* UIViewController+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85654D1D1149B400B72111 /* UIViewController+VDEnhance.m */; };
+		FE85656D1D123B9900B72111 /* UIView+VDGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85656C1D123B9900B72111 /* UIView+VDGesture.m */; };
+		FE8565731D12474F00B72111 /* VDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565701D12474F00B72111 /* VDRouter.m */; };
+		FE8565741D12474F00B72111 /* VDRouterNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565721D12474F00B72111 /* VDRouterNavigationViewController.m */; };
+		FE8565771D12484000B72111 /* UIViewController+VDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565761D12484000B72111 /* UIViewController+VDRouter.m */; };
 		FED41BA11D06AD0100A883AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA01D06AD0100A883AB /* main.m */; };
 		FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA31D06AD0100A883AB /* AppDelegate.m */; };
 		FED41BA71D06AD0100A883AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA61D06AD0100A883AB /* ViewController.m */; };
@@ -73,6 +77,14 @@
 		FE85654A1D1149B400B72111 /* UIView+VDFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDFrame.m"; sourceTree = "<group>"; };
 		FE85654C1D1149B400B72111 /* UIViewController+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDEnhance.h"; sourceTree = "<group>"; };
 		FE85654D1D1149B400B72111 /* UIViewController+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDEnhance.m"; sourceTree = "<group>"; };
+		FE85656B1D123B9900B72111 /* UIView+VDGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDGesture.h"; sourceTree = "<group>"; };
+		FE85656C1D123B9900B72111 /* UIView+VDGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDGesture.m"; sourceTree = "<group>"; };
+		FE85656F1D12474F00B72111 /* VDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDRouter.h; sourceTree = "<group>"; };
+		FE8565701D12474F00B72111 /* VDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDRouter.m; sourceTree = "<group>"; };
+		FE8565711D12474F00B72111 /* VDRouterNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDRouterNavigationViewController.h; sourceTree = "<group>"; };
+		FE8565721D12474F00B72111 /* VDRouterNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDRouterNavigationViewController.m; sourceTree = "<group>"; };
+		FE8565751D12484000B72111 /* UIViewController+VDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDRouter.h"; sourceTree = "<group>"; };
+		FE8565761D12484000B72111 /* UIViewController+VDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDRouter.m"; sourceTree = "<group>"; };
 		FED41B9C1D06AD0100A883AB /* objcTempUtilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objcTempUtilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED41BA01D06AD0100A883AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FED41BA21D06AD0100A883AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +119,7 @@
 				FE8565231D1149B400B72111 /* NSObject */,
 				FE8565261D1149B400B72111 /* NSOperation */,
 				FE8565291D1149B400B72111 /* NSString */,
+				FE85656E1D12474F00B72111 /* Router */,
 				FE8565301D1149B400B72111 /* UIApplication */,
 				FE8565331D1149B400B72111 /* UICollectionViewCell */,
 				FE8565361D1149B400B72111 /* UIColor */,
@@ -241,6 +254,8 @@
 				FE8565481D1149B400B72111 /* UIView+VDEnhance.m */,
 				FE8565491D1149B400B72111 /* UIView+VDFrame.h */,
 				FE85654A1D1149B400B72111 /* UIView+VDFrame.m */,
+				FE85656B1D123B9900B72111 /* UIView+VDGesture.h */,
+				FE85656C1D123B9900B72111 /* UIView+VDGesture.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -252,6 +267,19 @@
 				FE85654D1D1149B400B72111 /* UIViewController+VDEnhance.m */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		FE85656E1D12474F00B72111 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FE85656F1D12474F00B72111 /* VDRouter.h */,
+				FE8565701D12474F00B72111 /* VDRouter.m */,
+				FE8565711D12474F00B72111 /* VDRouterNavigationViewController.h */,
+				FE8565721D12474F00B72111 /* VDRouterNavigationViewController.m */,
+				FE8565751D12484000B72111 /* UIViewController+VDRouter.h */,
+				FE8565761D12484000B72111 /* UIViewController+VDRouter.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		FED41B931D06AD0100A883AB = {
@@ -392,7 +420,11 @@
 				FE8565551D1149B400B72111 /* NSString+VDRegex.m in Sources */,
 				FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */,
 				FE85655A1D1149B400B72111 /* UILabel+VDEnhance.m in Sources */,
+				FE85656D1D123B9900B72111 /* UIView+VDGesture.m in Sources */,
+				FE8565731D12474F00B72111 /* VDRouter.m in Sources */,
+				FE8565741D12474F00B72111 /* VDRouterNavigationViewController.m in Sources */,
 				FE85655C1D1149B400B72111 /* UIScrollView+VDEnhance.m in Sources */,
+				FE8565771D12484000B72111 /* UIViewController+VDRouter.m in Sources */,
 				FED41BA11D06AD0100A883AB /* main.m in Sources */,
 				FE8565501D1149B400B72111 /* NSDictionary+VDEnhance.m in Sources */,
 				FE85654F1D1149B400B72111 /* CALayer+VDEnhance.m in Sources */,

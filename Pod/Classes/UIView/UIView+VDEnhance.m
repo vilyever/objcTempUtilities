@@ -21,7 +21,10 @@
 
 + (instancetype)vd_viewFromNibWithNibName:(NSString *)nibName
 {
-    return [ [ [self class] alloc] initWithNibName:nibName];
+    UIView *instance = [[[self class] alloc] init];
+    NSArray *nibViews = [ [NSBundle mainBundle] loadNibNamed:nibName owner:instance options:nil];
+    instance = nibViews[0];
+    return instance;
 }
 
 - (NSArray *)vd_addSubview:(UIView *)view scaleToFill:(BOOL)scaleToFill
@@ -58,17 +61,17 @@
 }
 
 #pragma mark Private Method
-- (instancetype)initWithNibName:(NSString *)nibName
-{
-    self = [self init];
-    if (self)
-    {
-        NSArray *nibViews = [ [NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil];
-        self = nibViews[0];
-    }
-    
-    return self;
-}
+//- (instancetype)vd_internalInitWithNibName:(NSString *)nibName
+//{
+//    self = [self init];
+//    if (self)
+//    {
+//        NSArray *nibViews = [ [NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil];
+//        self = nibViews[0];
+//    }
+//    
+//    return self;
+//}
 
 
 @end

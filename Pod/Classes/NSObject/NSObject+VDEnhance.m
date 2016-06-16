@@ -27,22 +27,30 @@
 
 - (void)vd_performSelector:(SEL)aSelector
 {
-    ( (void (*)(id, SEL) )[self methodForSelector:aSelector] )(self, aSelector);
+    if ([self respondsToSelector:aSelector]) {
+        ( (void (*)(id, SEL) )[self methodForSelector:aSelector] )(self, aSelector);
+    }
 }
 
 - (void)vd_performSelector:(SEL)aSelector withObject:(id)object
 {
-    ( (void (*)(id, SEL, id) )[self methodForSelector:aSelector] )(self, aSelector, object);
+    if ([self respondsToSelector:aSelector]) {
+        ( (void (*)(id, SEL, id) )[self methodForSelector:aSelector] )(self, aSelector, object);
+    }
 }
 
 - (void)vd_performSelector:(SEL)aSelector withObject:(id)object1 withObject:(id)object2
 {
-    ( (void (*)(id, SEL, id, id) )[self methodForSelector:aSelector] )(self, aSelector, object1, object2);
+    if ([self respondsToSelector:aSelector]) {
+        ( (void (*)(id, SEL, id, id) )[self methodForSelector:aSelector] )(self, aSelector, object1, object2);
+    }
 }
 
 - (void)vd_performSelector:(SEL)aSelector withInteger:(NSInteger)integer
 {
-    ( (void (*)(id, SEL, NSInteger) )[self methodForSelector:aSelector] )(self, aSelector, integer);
+    if ([self respondsToSelector:aSelector]) {
+        ( (void (*)(id, SEL, NSInteger) )[self methodForSelector:aSelector] )(self, aSelector, integer);
+    }
 }
 
 #pragma mark Private Method
