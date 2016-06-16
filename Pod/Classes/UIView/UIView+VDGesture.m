@@ -79,8 +79,9 @@
 
 - (void)vd_internalHandleTapAction:(UITapGestureRecognizer *)tapGestureRecognizer {
     [[self vd_tapTarget] vd_performSelector:[self vd_tapSelector]];
-    [self vd_tapBlock]();
-    
+    if ([self vd_tapBlock]) {
+        [self vd_tapBlock]();
+    }
 }
 
 @end
