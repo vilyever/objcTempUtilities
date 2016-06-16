@@ -70,7 +70,7 @@
 
 #pragma mark Private Method
 - (void)vd_internalActiveOnTap {
-    if ([self vd_isOnTapActive]) {
+    if (![self vd_isOnTapActive]) {
         [self setVd_isOnTapActive:YES];
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(vd_internalHandleTapAction:)];
         [self addGestureRecognizer:tapGestureRecognizer];
