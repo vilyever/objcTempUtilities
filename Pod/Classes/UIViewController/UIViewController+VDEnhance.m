@@ -7,6 +7,7 @@
 //
 
 #import "UIViewController+VDEnhance.h"
+#import "VDMacros.h"
 
 //#import <objc/runtime.h>
 
@@ -46,7 +47,7 @@
 
 + (void)vd_backToRootViewController
 {
-    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    UIViewController *rootViewController = VDWindow.rootViewController;
     UIViewController *presentedViewController = rootViewController;
     while (presentedViewController.presentedViewController) {
         presentedViewController = presentedViewController.presentedViewController;
@@ -113,8 +114,8 @@
     self.modalPresentationStyle = UIModalPresentationPopover;
     [controller presentViewController:self animated:YES completion:NULL];
     UIPopoverPresentationController *popoverPresentationController = self.popoverPresentationController;
-    popoverPresentationController.sourceView = [UIApplication sharedApplication].keyWindow;
-    popoverPresentationController.sourceRect = [UIApplication sharedApplication].keyWindow.bounds;
+    popoverPresentationController.sourceView = VDWindow;
+    popoverPresentationController.sourceRect = VDWindow.bounds;
     popoverPresentationController.permittedArrowDirections = 0;
     
     return popoverPresentationController;
@@ -138,7 +139,7 @@
 {
     if (!rootViewController)
     {
-        rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+        rootViewController = VDWindow.rootViewController;
     }
     
     if ( [rootViewController isKindOfClass:[UITabBarController class] ] )

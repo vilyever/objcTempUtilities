@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE615D141D1D359600AECD76 /* NSObject+VDHook.m in Sources */ = {isa = PBXBuildFile; fileRef = FE615D131D1D359600AECD76 /* NSObject+VDHook.m */; };
 		FE85654F1D1149B400B72111 /* CALayer+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85651D1D1149B400B72111 /* CALayer+VDEnhance.m */; };
 		FE8565501D1149B400B72111 /* NSDictionary+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565221D1149B400B72111 /* NSDictionary+VDEnhance.m */; };
 		FE8565511D1149B400B72111 /* NSObject+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565251D1149B400B72111 /* NSObject+VDEnhance.m */; };
@@ -29,6 +30,12 @@
 		FE8565731D12474F00B72111 /* VDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565701D12474F00B72111 /* VDRouter.m */; };
 		FE8565741D12474F00B72111 /* VDRouterNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565721D12474F00B72111 /* VDRouterNavigationViewController.m */; };
 		FE8565771D12484000B72111 /* UIViewController+VDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565761D12484000B72111 /* UIViewController+VDRouter.m */; };
+		FE85657C1D12777A00B72111 /* VDFingerPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85657B1D12777A00B72111 /* VDFingerPrintViewController.m */; };
+		FE8565801D12834100B72111 /* VDHook.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85657F1D12834100B72111 /* VDHook.m */; };
+		FE8565831D12892800B72111 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565821D12892800B72111 /* Aspects.m */; };
+		FEA867071D12B0340059C59F /* VDHookRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA867061D12B0340059C59F /* VDHookRecorder.m */; };
+		FEA8670A1D1383C50059C59F /* VDHookElement.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA867091D1383C50059C59F /* VDHookElement.m */; };
+		FEA867161D13C2350059C59F /* VDHookInvocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA867151D13C2350059C59F /* VDHookInvocationInfo.m */; };
 		FED41BA11D06AD0100A883AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA01D06AD0100A883AB /* main.m */; };
 		FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA31D06AD0100A883AB /* AppDelegate.m */; };
 		FED41BA71D06AD0100A883AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED41BA61D06AD0100A883AB /* ViewController.m */; };
@@ -40,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE615D121D1D359600AECD76 /* NSObject+VDHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDHook.h"; sourceTree = "<group>"; };
+		FE615D131D1D359600AECD76 /* NSObject+VDHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDHook.m"; sourceTree = "<group>"; };
 		FE85651C1D1149B400B72111 /* CALayer+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+VDEnhance.h"; sourceTree = "<group>"; };
 		FE85651D1D1149B400B72111 /* CALayer+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+VDEnhance.m"; sourceTree = "<group>"; };
 		FE85651F1D1149B400B72111 /* VDMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDMacros.h; sourceTree = "<group>"; };
@@ -85,6 +94,18 @@
 		FE8565721D12474F00B72111 /* VDRouterNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDRouterNavigationViewController.m; sourceTree = "<group>"; };
 		FE8565751D12484000B72111 /* UIViewController+VDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDRouter.h"; sourceTree = "<group>"; };
 		FE8565761D12484000B72111 /* UIViewController+VDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDRouter.m"; sourceTree = "<group>"; };
+		FE85657A1D12777A00B72111 /* VDFingerPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDFingerPrintViewController.h; sourceTree = "<group>"; };
+		FE85657B1D12777A00B72111 /* VDFingerPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDFingerPrintViewController.m; sourceTree = "<group>"; };
+		FE85657E1D12834100B72111 /* VDHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHook.h; sourceTree = "<group>"; };
+		FE85657F1D12834100B72111 /* VDHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHook.m; sourceTree = "<group>"; };
+		FE8565811D12892800B72111 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		FE8565821D12892800B72111 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		FEA867051D12B0340059C59F /* VDHookRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHookRecorder.h; sourceTree = "<group>"; };
+		FEA867061D12B0340059C59F /* VDHookRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHookRecorder.m; sourceTree = "<group>"; };
+		FEA867081D1383C50059C59F /* VDHookElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHookElement.h; sourceTree = "<group>"; };
+		FEA867091D1383C50059C59F /* VDHookElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHookElement.m; sourceTree = "<group>"; };
+		FEA867141D13C2350059C59F /* VDHookInvocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHookInvocationInfo.h; sourceTree = "<group>"; };
+		FEA867151D13C2350059C59F /* VDHookInvocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHookInvocationInfo.m; sourceTree = "<group>"; };
 		FED41B9C1D06AD0100A883AB /* objcTempUtilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objcTempUtilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED41BA01D06AD0100A883AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FED41BA21D06AD0100A883AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,7 +134,9 @@
 		FE85651A1D1149B400B72111 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FE85657D1D12830B00B72111 /* Hook */,
 				FE85651B1D1149B400B72111 /* CALayer */,
+				FE8565791D12776B00B72111 /* FingerPrint */,
 				FE85651E1D1149B400B72111 /* Macros */,
 				FE8565201D1149B400B72111 /* NSDictionary */,
 				FE8565231D1149B400B72111 /* NSObject */,
@@ -282,6 +305,32 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		FE8565791D12776B00B72111 /* FingerPrint */ = {
+			isa = PBXGroup;
+			children = (
+				FE85657A1D12777A00B72111 /* VDFingerPrintViewController.h */,
+				FE85657B1D12777A00B72111 /* VDFingerPrintViewController.m */,
+			);
+			path = FingerPrint;
+			sourceTree = "<group>";
+		};
+		FE85657D1D12830B00B72111 /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				FE85657E1D12834100B72111 /* VDHook.h */,
+				FE85657F1D12834100B72111 /* VDHook.m */,
+				FEA867051D12B0340059C59F /* VDHookRecorder.h */,
+				FEA867061D12B0340059C59F /* VDHookRecorder.m */,
+				FEA867081D1383C50059C59F /* VDHookElement.h */,
+				FEA867091D1383C50059C59F /* VDHookElement.m */,
+				FEA867141D13C2350059C59F /* VDHookInvocationInfo.h */,
+				FEA867151D13C2350059C59F /* VDHookInvocationInfo.m */,
+				FE615D121D1D359600AECD76 /* NSObject+VDHook.h */,
+				FE615D131D1D359600AECD76 /* NSObject+VDHook.m */,
+			);
+			path = Hook;
+			sourceTree = "<group>";
+		};
 		FED41B931D06AD0100A883AB = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +353,8 @@
 		FED41B9E1D06AD0100A883AB /* objcTempUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				FE8565811D12892800B72111 /* Aspects.h */,
+				FE8565821D12892800B72111 /* Aspects.m */,
 				FED41BA21D06AD0100A883AB /* AppDelegate.h */,
 				FED41BA31D06AD0100A883AB /* AppDelegate.m */,
 				FED41BA51D06AD0100A883AB /* ViewController.h */,
@@ -413,26 +464,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE85657C1D12777A00B72111 /* VDFingerPrintViewController.m in Sources */,
 				FED41BA71D06AD0100A883AB /* ViewController.m in Sources */,
+				FEA867161D13C2350059C59F /* VDHookInvocationInfo.m in Sources */,
 				FE85655E1D1149B400B72111 /* UIView+VDEnhance.m in Sources */,
 				FE85655D1D1149B400B72111 /* UIView+VDConstraint.m in Sources */,
 				FE8565601D1149B400B72111 /* UIViewController+VDEnhance.m in Sources */,
 				FE8565551D1149B400B72111 /* NSString+VDRegex.m in Sources */,
 				FED41BA41D06AD0100A883AB /* AppDelegate.m in Sources */,
 				FE85655A1D1149B400B72111 /* UILabel+VDEnhance.m in Sources */,
+				FEA8670A1D1383C50059C59F /* VDHookElement.m in Sources */,
 				FE85656D1D123B9900B72111 /* UIView+VDGesture.m in Sources */,
 				FE8565731D12474F00B72111 /* VDRouter.m in Sources */,
 				FE8565741D12474F00B72111 /* VDRouterNavigationViewController.m in Sources */,
 				FE85655C1D1149B400B72111 /* UIScrollView+VDEnhance.m in Sources */,
 				FE8565771D12484000B72111 /* UIViewController+VDRouter.m in Sources */,
 				FED41BA11D06AD0100A883AB /* main.m in Sources */,
+				FE615D141D1D359600AECD76 /* NSObject+VDHook.m in Sources */,
 				FE8565501D1149B400B72111 /* NSDictionary+VDEnhance.m in Sources */,
 				FE85654F1D1149B400B72111 /* CALayer+VDEnhance.m in Sources */,
 				FE8565511D1149B400B72111 /* NSObject+VDEnhance.m in Sources */,
 				FE8565591D1149B400B72111 /* UIImage+VDEnhance.m in Sources */,
+				FE8565801D12834100B72111 /* VDHook.m in Sources */,
 				FEE7D4FB1D07BAE5008CEC98 /* README.md in Sources */,
 				FE8565581D1149B400B72111 /* UIColor+VDEnhance.m in Sources */,
 				FE8565521D1149B400B72111 /* VDDelayOperation.m in Sources */,
+				FEA867071D12B0340059C59F /* VDHookRecorder.m in Sources */,
+				FE8565831D12892800B72111 /* Aspects.m in Sources */,
 				FE8565571D1149B400B72111 /* UICollectionViewCell+VDEnhance.m in Sources */,
 				FE85655F1D1149B400B72111 /* UIView+VDFrame.m in Sources */,
 				FE8565561D1149B400B72111 /* UIApplication+VDEnhance.m in Sources */,

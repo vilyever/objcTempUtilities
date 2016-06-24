@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Aspects.h"
+
 
 @interface ViewController ()
 
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self aspect_hookSelector:@selector(observeValueForKeyPath:ofObject:change:context:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info) {
+        
+    } error:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,12 +9,12 @@
 #import "VDRouter.h"
 
 #import "VDRouterNavigationViewController.h"
+#import "VDMacros.h"
 
 @interface VDRouter ()
 
 @property (nonatomic, strong) VDRouterNavigationViewController *rootNavigationController;
 @property (nonatomic, strong) NSMutableDictionary *registeredViewControllers;
-@property (nonatomic, assign) BOOL isInitialized;
 
 @end
 
@@ -32,14 +32,8 @@
     return _sharedInstance;
 }
 
-+ (void)initializeWithAppDelegateWindow:(UIWindow *)appDelegateWindow {
-    NSAssert(appDelegateWindow, @"appDelegateWindow can't be nil");
-    appDelegateWindow.rootViewController = [self sharedInstance].rootNavigationController;
-    [self sharedInstance].isInitialized = YES;
-}
-
 + (void)setRootViewControllerIdentifier:(NSString *)rootViewControllerIdentifier {
-    [[self sharedInstance] internalCheckInitialized];
+    VDWindow.rootViewController = [self sharedInstance].rootNavigationController;
     
     Class viewControllerClass = [[self sharedInstance].registeredViewControllers objectForKey:rootViewControllerIdentifier];
     NSAssert(viewControllerClass, @"rootViewControllerIdentifier must be binded with a ViewController's class");
@@ -57,8 +51,6 @@
 }
 
 + (void)push:(NSString *)identifier {
-    [[self sharedInstance] internalCheckInitialized];
-    
     Class viewControllerClass = [[self sharedInstance].registeredViewControllers objectForKey:identifier];
     if (viewControllerClass) {
         UIViewController *targetViewController = [[viewControllerClass alloc] init];
@@ -67,8 +59,6 @@
 }
 
 + (void)present:(NSString *)identifier {
-    [[self sharedInstance] internalCheckInitialized];
-    
     Class viewControllerClass = [[self sharedInstance].registeredViewControllers objectForKey:identifier];
     if (viewControllerClass) {
         UIViewController *targetViewController = [[viewControllerClass alloc] init];
@@ -115,10 +105,6 @@
 #pragma mark Private Method
 - (void)internalInit {
     
-}
-
-- (void)internalCheckInitialized {
-    NSAssert(self.isInitialized, @"VDRouter can't work without initialize");
 }
 
 @end

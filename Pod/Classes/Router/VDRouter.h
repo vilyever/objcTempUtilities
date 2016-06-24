@@ -24,7 +24,6 @@
 #pragma mark Public Method
 + (VDRouter *)sharedInstance;
 
-+ (void)initializeWithAppDelegateWindow:(UIWindow *)appDelegateWindow;
 + (void)setRootViewControllerIdentifier:(NSString *)rootViewControllerIdentifier;
 
 + (void)bindViewController:(Class)vcClass identifier:(NSString *)identifier;
