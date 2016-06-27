@@ -50,20 +50,28 @@
     return [[self sharedInstance].registeredViewControllers objectForKey:identifier];
 }
 
-+ (void)push:(NSString *)identifier {
++ (UIViewController *)push:(NSString *)identifier {
     Class viewControllerClass = [[self sharedInstance].registeredViewControllers objectForKey:identifier];
     if (viewControllerClass) {
         UIViewController *targetViewController = [[viewControllerClass alloc] init];
         [[self sharedInstance].rootNavigationController pushViewController:targetViewController animated:YES];
+        
+        return targetViewController;
     }
+    
+    return nil;
 }
 
-+ (void)present:(NSString *)identifier {
++ (UIViewController *)present:(NSString *)identifier {
     Class viewControllerClass = [[self sharedInstance].registeredViewControllers objectForKey:identifier];
     if (viewControllerClass) {
         UIViewController *targetViewController = [[viewControllerClass alloc] init];
         [[UIViewController vd_topViewController] presentViewController:targetViewController animated:YES completion:NULL];
+        
+        return targetViewController;
     }
+    
+    return nil;
 }
 
 

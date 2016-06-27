@@ -29,8 +29,8 @@
 + (void)bindViewController:(Class)vcClass identifier:(NSString *)identifier;
 + (Class)findBindedViewControllerClass:(NSString *)identifier;
 
-+ (void)push:(NSString *)identifier;
-+ (void)present:(NSString *)identifier;
++ (UIViewController *)push:(NSString *)identifier;
++ (UIViewController *)present:(NSString *)identifier;
 
 #pragma mark Properties
 
