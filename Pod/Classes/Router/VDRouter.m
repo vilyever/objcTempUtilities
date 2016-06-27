@@ -51,9 +51,16 @@
 }
 
 + (UIViewController *)push:(NSString *)identifier {
+    return [self push:identifier withPrepareBlock:nil];
+}
+
++ (UIViewController *)push:(NSString *)identifier withPrepareBlock:(void (^)(UIViewController *))block {
     Class viewControllerClass = [[self sharedInstance].registeredViewControllers objectForKey:identifier];
     if (viewControllerClass) {
         UIViewController *targetViewController = [[viewControllerClass alloc] init];
+        if (block) {
+            block(targetViewController);
+        }
         [[self sharedInstance].rootNavigationController pushViewController:targetViewController animated:YES];
         
         return targetViewController;
@@ -63,9 +70,16 @@
 }
 
 + (UIViewController *)present:(NSString *)identifier {
+    return [self present:identifier withPrepareBlock:nil];
+}
+
++ (UIViewController *)present:(NSString *)identifier withPrepareBlock:(void (^)(UIViewController *))block {
     Class viewControllerClass = [[self sharedInstance].registeredViewControllers objectForKey:identifier];
     if (viewControllerClass) {
         UIViewController *targetViewController = [[viewControllerClass alloc] init];
+        if (block) {
+            block(targetViewController);
+        }
         [[UIViewController vd_topViewController] presentViewController:targetViewController animated:YES completion:NULL];
         
         return targetViewController;
