@@ -54,7 +54,7 @@
     return [self push:identifier withPrepareBlock:nil];
 }
 
-+ (UIViewController *)push:(NSString *)identifier withPrepareBlock:(void (^)(UIViewController *))block {
++ (UIViewController *)push:(NSString *)identifier withPrepareBlock:(void (^)(UIViewController *controller))block {
     Class viewControllerClass = [[self sharedInstance].registeredViewControllers objectForKey:identifier];
     if (viewControllerClass) {
         UIViewController *targetViewController = [[viewControllerClass alloc] init];
@@ -73,7 +73,7 @@
     return [self present:identifier withPrepareBlock:nil];
 }
 
-+ (UIViewController *)present:(NSString *)identifier withPrepareBlock:(void (^)(UIViewController *))block {
++ (UIViewController *)present:(NSString *)identifier withPrepareBlock:(void (^)(UIViewController *controller))block {
     Class viewControllerClass = [[self sharedInstance].registeredViewControllers objectForKey:identifier];
     if (viewControllerClass) {
         UIViewController *targetViewController = [[viewControllerClass alloc] init];

@@ -30,9 +30,9 @@
 + (Class)findBindedViewControllerClass:(NSString *)identifier;
 
 + (UIViewController *)push:(NSString *)identifier;
-+ (UIViewController *)push:(NSString *)identifier withPrepareBlock:(void(^)(UIViewController *))block;
++ (UIViewController *)push:(NSString *)identifier withPrepareBlock:(void(^)(UIViewController *controller))block;
 + (UIViewController *)present:(NSString *)identifier;
-+ (UIViewController *)present:(NSString *)identifier withPrepareBlock:(void(^)(UIViewController *))block;
++ (UIViewController *)present:(NSString *)identifier withPrepareBlock:(void(^)(UIViewController *controller))block;
 
 #pragma mark Properties
 
