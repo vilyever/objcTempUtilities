@@ -21,14 +21,3 @@
 - (void)vd_performSelector:(SEL)aSelector withInteger:(NSInteger)integer;
 
 @end
-
-@interface VDWeakObjectCarrier : NSObject
-
-@property (nonatomic, weak, readonly) id weakObject;
-
-#pragma mark Public Method
-+ (instancetype)carrierWithWeakObject:(id)object;
-
-- (instancetype)initWithWeakObject:(id)object;
-
-@end

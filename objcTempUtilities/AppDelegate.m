@@ -13,6 +13,8 @@
 #import "Aspects.h"
 #import "VDMacros.h"
 
+#import "VDWeakRef.h"
+
 #include <dlfcn.h>
 
 @interface AppDelegate ()
@@ -106,6 +108,13 @@
 //        NSLog(@"imp %@", symbol);
 //    }
     
+    
+    VDWeakRef *ref1 = [VDWeakRef refWithObject:self];
+    VDWeakRef *ref2 = [VDWeakRef refWithObject:self];
+    
+    NSArray *array = [NSArray arrayWithObject:ref1];
+    
+    NSLog(@"self %@, ref1 %@, ref2 %@, array contain %@", self, ref1, ref2, @([array containsObject:ref2]));
     
     return YES;
 }

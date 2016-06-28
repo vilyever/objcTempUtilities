@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE615D141D1D359600AECD76 /* NSObject+VDHook.m in Sources */ = {isa = PBXBuildFile; fileRef = FE615D131D1D359600AECD76 /* NSObject+VDHook.m */; };
-		FE615D3C1D20D11C00AECD76 /* VDSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FE615D3B1D20D11C00AECD76 /* VDSocketClient.m */; };
+		FE615DFA1D225E7A00AECD76 /* VDWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = FE615DF91D225E7A00AECD76 /* VDWeakRef.m */; };
 		FE85654F1D1149B400B72111 /* CALayer+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE85651D1D1149B400B72111 /* CALayer+VDEnhance.m */; };
 		FE8565501D1149B400B72111 /* NSDictionary+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565221D1149B400B72111 /* NSDictionary+VDEnhance.m */; };
 		FE8565511D1149B400B72111 /* NSObject+VDEnhance.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8565251D1149B400B72111 /* NSObject+VDEnhance.m */; };
@@ -50,8 +50,8 @@
 /* Begin PBXFileReference section */
 		FE615D121D1D359600AECD76 /* NSObject+VDHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDHook.h"; sourceTree = "<group>"; };
 		FE615D131D1D359600AECD76 /* NSObject+VDHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDHook.m"; sourceTree = "<group>"; };
-		FE615D3A1D20D11C00AECD76 /* VDSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDSocketClient.h; sourceTree = "<group>"; };
-		FE615D3B1D20D11C00AECD76 /* VDSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDSocketClient.m; sourceTree = "<group>"; };
+		FE615DF81D225E7A00AECD76 /* VDWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeakRef.h; sourceTree = "<group>"; };
+		FE615DF91D225E7A00AECD76 /* VDWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDWeakRef.m; sourceTree = "<group>"; };
 		FE85651C1D1149B400B72111 /* CALayer+VDEnhance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+VDEnhance.h"; sourceTree = "<group>"; };
 		FE85651D1D1149B400B72111 /* CALayer+VDEnhance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+VDEnhance.m"; sourceTree = "<group>"; };
 		FE85651F1D1149B400B72111 /* VDMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDMacros.h; sourceTree = "<group>"; };
@@ -134,19 +134,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FE615D391D20D0FC00AECD76 /* Socket */ = {
+		FE615DF71D225E6800AECD76 /* WeakRef */ = {
 			isa = PBXGroup;
 			children = (
-				FE615D3A1D20D11C00AECD76 /* VDSocketClient.h */,
-				FE615D3B1D20D11C00AECD76 /* VDSocketClient.m */,
+				FE615DF81D225E7A00AECD76 /* VDWeakRef.h */,
+				FE615DF91D225E7A00AECD76 /* VDWeakRef.m */,
 			);
-			path = Socket;
+			path = WeakRef;
 			sourceTree = "<group>";
 		};
 		FE85651A1D1149B400B72111 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FE615D391D20D0FC00AECD76 /* Socket */,
+				FE615DF71D225E6800AECD76 /* WeakRef */,
 				FE85657D1D12830B00B72111 /* Hook */,
 				FE85651B1D1149B400B72111 /* CALayer */,
 				FE8565791D12776B00B72111 /* FingerPrint */,
@@ -492,6 +492,7 @@
 				FE8565741D12474F00B72111 /* VDRouterNavigationViewController.m in Sources */,
 				FE85655C1D1149B400B72111 /* UIScrollView+VDEnhance.m in Sources */,
 				FE8565771D12484000B72111 /* UIViewController+VDRouter.m in Sources */,
+				FE615DFA1D225E7A00AECD76 /* VDWeakRef.m in Sources */,
 				FED41BA11D06AD0100A883AB /* main.m in Sources */,
 				FE615D141D1D359600AECD76 /* NSObject+VDHook.m in Sources */,
 				FE8565501D1149B400B72111 /* NSDictionary+VDEnhance.m in Sources */,
@@ -500,7 +501,6 @@
 				FE8565591D1149B400B72111 /* UIImage+VDEnhance.m in Sources */,
 				FE8565801D12834100B72111 /* VDHook.m in Sources */,
 				FEE7D4FB1D07BAE5008CEC98 /* README.md in Sources */,
-				FE615D3C1D20D11C00AECD76 /* VDSocketClient.m in Sources */,
 				FE8565581D1149B400B72111 /* UIColor+VDEnhance.m in Sources */,
 				FE8565521D1149B400B72111 /* VDDelayOperation.m in Sources */,
 				FEA867071D12B0340059C59F /* VDHookRecorder.m in Sources */,

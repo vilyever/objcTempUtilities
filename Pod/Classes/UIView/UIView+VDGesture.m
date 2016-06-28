@@ -11,6 +11,7 @@
 #import <objc/runtime.h>
 
 #import "NSObject+VDEnhance.h"
+#import "VDWeakRef.h"
 
 
 @implementation UIView (VDGesture)
@@ -29,14 +30,14 @@
 
 #pragma mark Properties
 - (id)vd_tapTarget {
-    VDWeakObjectCarrier *carrier = objc_getAssociatedObject(self, @selector(vd_tapTarget));
-    id tapTarget = carrier.weakObject;
+    VDWeakRef *ref = objc_getAssociatedObject(self, @selector(vd_tapTarget));
+    id tapTarget = ref.object;
     return tapTarget;
 }
 
 - (void)setVd_tapTarget:(id)tapTarget {
-    VDWeakObjectCarrier *carrier = [VDWeakObjectCarrier carrierWithWeakObject:tapTarget];
-    objc_setAssociatedObject(self, @selector(vd_tapTarget), carrier, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    VDWeakRef *ref = [VDWeakRef refWithObject:tapTarget];
+    objc_setAssociatedObject(self, @selector(vd_tapTarget), ref, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (SEL)vd_tapSelector {

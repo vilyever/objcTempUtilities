@@ -57,23 +57,3 @@
 
 
 @end
-
-
-@implementation VDWeakObjectCarrier
-
-#pragma mark Public Method
-+ (instancetype)carrierWithWeakObject:(id)object
-{
-    return [ [VDWeakObjectCarrier alloc] initWithWeakObject:object];
-}
-
-- (instancetype)initWithWeakObject:(id)object
-{
-    self = [super init];
-    
-    _weakObject = object;
-    
-    return self;
-}
-
-@end
